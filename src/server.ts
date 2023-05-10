@@ -1,8 +1,8 @@
-import express, {Request, Response} from 'express';
+import express, {Request, Response, Router} from 'express';
 import dotenv from 'dotenv';
 dotenv.config({ path: __dirname+'/config/.env.local' });
 
-import userRoutes from './userRoutes';
+import userRoutes from './routes/userRoutes';
 
 const PORT = process.env.PORT;
 const app = express();

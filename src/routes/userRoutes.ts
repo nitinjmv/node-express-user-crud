@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 
-const router = express.Router();
+const userRouter = express.Router();
 /*
 router.get('/', (req: Request, res: Response)=>{
     res.send('get users');
@@ -16,7 +16,7 @@ router.delete('/:id', (req: Request, res: Response)=>{
     res.send('delete users');
 });
 */
-router.get('/', (req: Request, res: Response)=>{
+userRouter.get('/', (req: Request, res: Response)=>{
     res.send('get users');
 }).post('/', (req: Request, res: Response)=>{
     res.send('post users');
@@ -27,4 +27,4 @@ router.get('/', (req: Request, res: Response)=>{
     res.send('delete users');
 });
 
-export default router;
+export default userRouter;
